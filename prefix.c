@@ -24,10 +24,12 @@ void main()
             {
 
             }
-            else
+            else{
+                len=j;
                 break;
+            }
         }
     }
-    for(i=0;i<j;i++)
+    for(i=0;i<len;i++)
         printf("%c",a[0][i]);
 }
