@@ -1,0 +1,47 @@
+#include<stdio.h>
+int main(){
+int num,i,j,con,start,temp;
+scanf("%d",&num);
+start=num+1;
+con=2*num;
+for(i=1;i<con;i++){
+    if(i<=num){
+        start--;
+        for(j=num;j>=1;j--){
+            if(j>=start){
+                printf("%d",j);
+                temp=j;
+            }else{
+            printf("%d",temp);
+            }
+        }
+        for(j=2;j<=num;j++){
+            if(j>=start){
+                printf("%d",j);
+            }
+            else
+                printf("%d",start);
+        }
+    }
+    else{
+        start++;
+        for(j=num;j>=1;j--){
+            if(j>=start){
+                printf("%d",j);
+                temp=j;
+            }else{
+            printf("%d",temp);
+            }
+        }
+        for(j=2;j<=num;j++){
+            if(j>=start){
+                printf("%d",j);
+            }
+            else
+                printf("%d",start);
+        }
+    }
+    printf("\n");
+}
+return 0;
+}
